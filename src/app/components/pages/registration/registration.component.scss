@@ -1,0 +1,17 @@
+.mat-card {
+    padding: 15px;
+    margin-top: 30px;
+
+    &-title {
+        text-align: center;
+    }
+    mat-form-field {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+    }
+    .mat-raised-button {
+        display: block;
+        margin: auto;
+    }
+}
