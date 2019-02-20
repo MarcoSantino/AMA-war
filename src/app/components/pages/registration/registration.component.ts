@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { UserService } from '../../../services/user.service';
 
 @Component({
   selector: 'app-registration',
@@ -9,17 +10,18 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 export class RegistrationComponent implements OnInit {
   public registrationForm: FormGroup;
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.initForm();
   }
 
   sendForm(): void {
-    console.log({
+    this.userService.setUser({
       name: this.registrationForm.value.name,
       lastName: this.registrationForm.value.lastName,
-      email: this.registrationForm.value.email
+      email: this.registrationForm.value.email,
+      submitDate: new Date()
     });
   }
 
