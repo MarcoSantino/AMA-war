@@ -34,19 +34,6 @@
     }
     &.loser {
         border: 2px solid red;
-        &::before {
-            content: '';
-            height: 2px;
-            background-color: red;
-            width: calc(100% + 8px);
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: -4px;
-            margin: auto;
-            transform: rotate(-10deg);
-        }
         span {
             background-color: red;
             &::after,
