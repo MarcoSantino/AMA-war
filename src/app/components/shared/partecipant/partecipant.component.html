@@ -1,4 +1,5 @@
-<mat-card>
-    {{user.name}}
-    {{user.lastName}}
+<mat-card [ngClass]="{'winner': user.winner, 'loser': !user.winner}">
+    {{user.name | titlecase}}
+    {{user.lastName | titlecase}}
+    <span></span>
 </mat-card>

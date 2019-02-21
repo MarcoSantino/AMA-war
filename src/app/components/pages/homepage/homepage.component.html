@@ -3,7 +3,7 @@
     <div class="columns is-centered">
       <div class="column is-half">
         <div class="columns is-multiline">
-          <div class="column is-half" *ngFor="let user of users$ | orderBy: 'submitDate'">
+          <div class="column is-half wrap-partecipant" *ngFor="let user of users$ | orderBy: 'submitDate'">
             <app-partecipant [user]="user"></app-partecipant>
           </div>
         </div>
