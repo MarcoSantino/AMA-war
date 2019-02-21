@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/shared/header/header.component';
 import { RegistrationComponent } from './components/pages/registration/registration.component';
 import { UserService } from './services/user.service';
 import { PartecipantComponent } from './components/shared/partecipant/partecipant.component';
+import { OrderByPipe } from './pipes/order-by.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PartecipantComponent } from './components/shared/partecipant/partecipan
     HomepageComponent,
     HeaderComponent,
     RegistrationComponent,
-    PartecipantComponent
+    PartecipantComponent,
+    OrderByPipe
   ],
   imports: [
     BrowserModule,
